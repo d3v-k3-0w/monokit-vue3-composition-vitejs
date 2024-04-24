@@ -1,0 +1,13 @@
+{
+	"name": "monokit-vuejs3-composition",
+	"description": "",
+	"private": true,
+	"workspaces": [
+		"packages/*"
+	],
+	"author": "d3v_k3_0w",
+	"license": "ISC",
+	"scripts": {
+		"Dev:01": "npm run --workspace=01-todos-app dev"
+	}
+}

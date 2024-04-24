@@ -1,0 +1,74 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+	--blanco: #ffffff;
+	--blanco-suave: #f8f8f8;
+	--blanco-tenue: #f2f2f2;
+
+	--negro: #181818;
+	--negro-suave: #222222;
+	--negro-tenue: #282828;
+
+	--indigo: #2c3e50;
+
+	--separador-claro-1: rgba(60, 60, 60, 0.29);
+	--separador-claro-2: rgba(60, 60, 60, 0.12);
+	--separador-oscuro-1: rgba(84, 84, 84, 0.65);
+	--separador-oscuro-2: rgba(84, 84, 84, 0.48);
+
+	--texto-claro-1: var(--indigo);
+	--texto-claro-2: rgba(60, 60, 60, 0.66);
+	--texto-oscuro-1: var(--blanco);
+	--texto-oscuro-2: rgba(235, 235, 235, 0.64);
+}
+
+/* semantic color variables for this project */
+:root {
+	--fondo: var(--blanco);
+	--fondo-suave: var(--blanco-suave);
+	--fondo-tenue: var(--blanco-tenue);
+
+	--borde: var(--separador-claro-2);
+	--borde-hover: var(--separador-claro-1);
+
+	--titulo: var(--texto-claro-1);
+	--texto: var(--texto-claro-1);
+
+	--espacio-seccion: 160px;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--fondo: var(--negro);
+		--fondo-suave: var(--negro-suave);
+		--fondo-tenue: var(--negro-tenue);
+
+		--borde: var(--separador-oscuro-2);
+		--borde-hover: var(--separador-oscuro-1);
+
+		--titulo: var(--texto-oscuro-1);
+		--texto: var(--texto-oscuro-2);
+	}
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+
+body {
+	min-height: 100vh;
+	color: var(--texto);
+	background: var(--fondo);
+	transition: color 0.5s, background-color 0.5s;
+	line-height: 1.6;
+	font-family: 'Jetbrains Mono', Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+	font-size: 15px;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
