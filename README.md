@@ -18,7 +18,7 @@ Este repositorio proporciona una estructura de monorepo para crear aplicaciones 
 ### Primeros pasos:
 
 1. Clona el repositorio: `git clone https://github.com/your-username/monokit-vuejs3-composition.git`
-2. Instala las dependencias: `npm install`
+2. Instala las dependencias desde la raíz con: `npm install`
 3. Desarrolla espacios de trabajo individuales:
    - Navega al directorio del espacio de trabajo deseado (por ejemplo, `packages/01-todos-app`).
    - Ejecuta el script de desarrollo: `npm run dev`

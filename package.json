@@ -1,5 +1,5 @@
 {
-	"name": "monokit-vuejs3-composition",
+	"name": "monokit-vuejs3-composition-vitejs",
 	"description": "",
 	"private": true,
 	"workspaces": [
@@ -8,6 +8,7 @@
 	"author": "d3v_k3_0w",
 	"license": "ISC",
 	"scripts": {
-		"Dev:01": "npm run --workspace=01-todos-app dev"
+		"Dev:01": "npm run --workspace=01-todos-app dev",
+		"Dev:02": "npm run --workspace=02-snowtify-app dev"
 	}
 }
